@@ -2,8 +2,9 @@ const users = JSON.parse(localStorage.getItem('usersdata')) || [];
 console.log(users);
 
 function displayUsers() {
-      tbody.innerHTML = ''; // Clear table body
+      tbody.innerHTML = 'No Data Found';
       users.forEach((user, index) => {
+        tbody.innerHTML = '';
         const row = document.createElement('tr');
         row.innerHTML = `
           <td>${index + 1}</td>
