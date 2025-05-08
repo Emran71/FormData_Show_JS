@@ -21,8 +21,8 @@ function displayUsers() {
             <td>${user.address}</td>
             <td>${user.mobile}</td>
             <td>
-                <button class="edit-btn" data-index="${index}"><i class="fa-solid fa-pen-to-square"></i></button>
-                <button class="delete-btn" data-index="${index}"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="edit-btn" data-index="${index}">Edit</button>
+                <button class="delete-btn" data-index="${index}">Delete</button>
             </td>
         `;
         tbody.appendChild(row);
