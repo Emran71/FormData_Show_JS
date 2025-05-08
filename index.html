@@ -3,54 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>User Registration System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="form-part">
             <h2>User Registration Form</h2>
-            <form id="userForm" action="POST">
-               <div> <label for="username">User Name:</label>
-                  <input type="text" id="username" name="username" required>
-               </div>
-               <div>
-                     <label for="name">Name:</label>
-                     <input type="text" id="name" name="name" required>
-               </div>
-                  <div>
-                     <label for="role">Email:</label>
-                     <input type="email" id="email" name="email" required>
-                  </div>
-                  <div>
-                     <label for="address">Address:</label>
-                     <input type="text" id="address" name="address" required>
-                  </div>
-                  <div>
-                     <label for="mobile">Mobile Number:</label>
-                     <input type="text" id="mobile" name="mobile" required>
-                  </div>
-                  <button type="submit">Register</button> 
+            <form id="userForm">
+                <div>
+                    <label for="username">User Name:</label>
+                    <input type="text" id="username" name="username" required placeholder="Enter username">
+                </div>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter full name">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter email address">
+                </div>
+                <div>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required placeholder="Enter address">
+                </div>
+                <div>
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile" required placeholder="Enter 11-digit mobile number" pattern="[0-9]{11}">
+                </div>
+                <button type="submit">Register</button>
             </form>
-        </div> 
+        </div>
         <div id="table-part">
-         <table>
-            <thead>
-               <tr>
-                  <th>#</th>
-                  <th>User Name</th>
-                  <th>Name</th>
-                  <th>Email</th>
-                  <th>Address</th>
-                  <th>Mobile Number</th>
-               </tr>
-            </thead>
-            <tbody>
-               <!-- Table rows will be added here dynamically -->
-            </tbody>
-         </table>
-        </div>   
-  </div> 
-  <script src="app.js"></script>
+            <h2>Registered Users</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>User Name</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Mobile Number</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
